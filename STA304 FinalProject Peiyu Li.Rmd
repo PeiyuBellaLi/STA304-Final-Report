@@ -8,7 +8,7 @@ output: pdf_document
 https://github.com/PeiyuBellaLi/STA304-Final-Report
 
 # Abstract
-This report focuses on if older people have a high risk of mortality once they are infected by COVID-19. The cutoff of the age to be considered as older or not is suggested to be 60 by some evidence. The sample contains case details in Alberta and Ontario and is selected using propensity score matching. Since the outcomes, in this case, are either recovered or deceased, a logistic regression model is performed. The p-value of the age variable indicates that it has a great impact on the outcome. Other variables such as gender, exposure type, and province are also significant. The ROC curve helps to verify the accuracy of the model, and causal inference is made at the end.
+During the COVID-19 pandemic, individuals especially old people are anxious about being infected and the risk of death. This report focuses on if people older than 60 have a high risk of mortality once they are infected by COVID-19. The sample contains case details in Alberta and Ontario and is selected using propensity score matching. Since the outcomes, in this case, are either recovered or deceased, a logistic regression model is performed. The result suggests that age has a great impact on the outcome, and other variables such as gender, exposure type, and province are also significant.
 
 ## Key words: COVID-19, Observational Study, Propensity Score, Causal Inference, Logistic Regression
 
@@ -137,8 +137,6 @@ The ROC curve confirms that this logistic model is accurate enough to make a con
 Although the sample size is large and contains the case details in two provinces, it is still not enough to make the conclusion only based on the data in two of the provinces in Canada. Also, other variables that are related to the individuals who were infected are limited. Thus, the propensity scores for many observations are the same since it is calculated only based on their provinces, exposure type, and gender. However, these problems are hard to avoid due to the confidentiality of COVID-19 cases. In addition, some observations did not provide their age, gender, and exposure type information. This may also result in a biased result. Another problem is that the propensity score matching is helpful to make causal inference based on observational data, but this is not perfect since it drops the observations that cannot be matched. 
 
 In future studies, the age variable can be divided into more age groups, versus simply using the cutoff of 60. This cutoff was suggested by some of the evidence mentioned in the Introduction section, but there might be other cutoff selections. However, it will make more sense if there are more age groups and doing the propensity score matching multiple times. As the pandemic continues, the sample size will be larger, and there will be more case detail information provided. It will be also interesting to look at the relationship between the length of the recovery period and age. 
-
-During the pandemic, some people are anxious due to some ‘rumors', but there are also some people who do not realize the seriousness of this coronavirus. It is important and meaningful to use statistical methods to verify some of the results.
 
 # References
 Alexander, R. (2020). Running Through a Propensity Score Matching Example.                
